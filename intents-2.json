@@ -1,0 +1,707 @@
+﻿{
+    "intents": [
+        {
+            "tag": "question 1",
+            "patterns": [
+                "Le  projecteur en mécanique quantique ?"
+            ],
+            "responses": [
+                "63.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 2",
+            "patterns": [
+                "Le commutateur de l’opérateur position et impulsion ?"
+            ],
+            "responses": [
+                "62.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 3",
+            "patterns": [
+                "La différence entre la Représentation d’Heisenberg et Représentation de Schrödinger ? "
+            ],
+            "responses": [
+                "61.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 4",
+            "patterns": [
+                "La relation d’incertitude d’Heisenberg ?"
+            ],
+            "responses": [
+                "60.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 5",
+            "patterns": [
+                "Donner le théorème d’Ehernfest ?",
+                "L’évolution dans le temps de la valeur moyenne d’un opérateur ?"
+            ],
+            "responses": [
+                "59.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 6",
+            "patterns": [
+                "Opérateur constante de mouvement ?"
+            ],
+            "responses": [
+                "58.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 7",
+            "patterns": [
+                "Quelle est l’équation d’Heisenberg ?"
+            ],
+            "responses": [
+                "57.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 8",
+            "patterns": [
+                "Fonction d’onde stationnaire ?"
+            ],
+            "responses": [
+                "56.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 9",
+            "patterns": [
+                "Pulsation de Bohr ?"
+            ],
+            "responses": [
+                "55.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 10",
+            "patterns": [
+                "Quelle est la moyenne temporelle d’un observable dans la représentation de Schrödinger?"
+            ],
+            "responses": [
+                "54.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 11",
+            "patterns": [
+                "Quelle est la moyenne temporelle d’un observable ne dépendant pas du temps?",
+                "Quelle est la moyenne temporelle d’un observable dans la représentation de Schrondinger?"
+            ],
+            "responses": [
+                "53.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 12",
+            "patterns": [
+                "C’est quoi un état stationnaire ?",
+                "Quand est-ce qu’un état est dit stationnaire ?"
+            ],
+            "responses": [
+                "52.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "question 13",
+            "patterns": [
+                "Quelle est l’expression du ket d’état à l’instant t si on connait son expression à l’état initial ?"
+            ],
+            "responses": [
+                "51.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "ket",
+            "patterns": [
+                "C’est quoi un ket ?",
+                "Comment définir et décrire l’état d’un système ?",
+                "Est-ce que le ket suffit pour décrire totalement un système physique à un instant donné t ?",
+                "ket",
+                "c'est quoiun ket ??"
+            ],
+            "responses": [
+                "1.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": " postulat1",
+            "patterns": [
+                "Quelle est le premier postulat de la mécanique quantique ?",
+                "C’est quoi Le postulat 1 de la mécanique quantique ?",
+                "Qu’est-ce qu’un état quantique ?"
+            ],
+            "responses": [
+                "2.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "postulat2",
+            "patterns": [
+                "quelle est le deuxième postulat de la mécanique quantique ?",
+                "C’est quoi Le postulat 2 de la mécanique quantique ?",
+                "Quelle est le  principe de la correspondance en mécanique quantique ?"
+            ],
+            "responses": [
+                "3.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "postulat3",
+            "patterns": [
+                "Quelle est le troisième postulat de la mécanique quantique ?",
+                "C’est quoi Le postulat 3 de la mécanique quantique ?",
+                "C’est quoi le postulat de la mesure dans la mécanique quantique ?"
+            ],
+            "responses": [
+                "4.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "postulat4",
+            "patterns": [
+                "Quelle est le quatrième postulat de la mécanique quantique ?",
+                "C’est quoi Le postulat 4 de la mécanique quantique ?",
+                "C'est quoi le postulat de l’interprétation probabiliste dans la mécanique quantique ?",
+                "Quelle est le postulat de Born ?"
+            ],
+            "responses": [
+                "5.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "postulat5",
+            "patterns": [
+                "6.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "postulat6",
+            "patterns": [
+                "Quelle est le sixième postulat de la mécanique quantique ?",
+                "C’est quoi Le postulat 6 de la mécanique quantique ?",
+                "C’est quoi le postulat de l’évolution temporelle de l'état quantique ?",
+                "Quelle est l’équation de Schrödinger?"
+            ],
+            "responses": [
+                "7.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "observable",
+            "patterns": [
+                "definition d'un observable",
+                "la difference entre un observable et un opérateur",
+                "les proprietées vérifiées par un observateur"
+            ],
+            "responses": [
+                "8.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "opérateur",
+            "patterns": [
+                "qu'est ce qu'un opérateur en mécanique quantique?"
+            ],
+            "responses": [
+                "9.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "ket_propre",
+            "patterns": [
+                "Qu’est-ce que c’est que les Kets propres ?",
+                "Comment définir les kets propres d’un opérateur ?",
+                "Quelles sont les kets propres d’un observable ?",
+                "Quelles sont les états propres ?",
+                "Quelles sont les vecteurs propres d’un opérateur ?"
+            ],
+            "responses": [
+                "10.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "spectre_observable",
+            "patterns": [
+                " Que represente le spectre d'un observable?"
+            ],
+            "responses": [
+                "11.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "bra",
+            "patterns": [
+                "C’est quoi un bra ?",
+                "Comment déterminer le bra associé à un ket ?",
+                "Qu’est ce que c’est qu’un espace de bras ?"
+            ],
+            "responses": [
+                "12.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "produit dyadique",
+            "patterns": [
+                "C’est quoi un produit dyadique ?",
+                "Le produit d'un ket et bra est ce un scalaire ou opérateur?",
+                "le produit ket fois bra"
+            ],
+            "responses": [
+                "13.png"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "hermitien",
+            "patterns": [
+                "Qu’est-ce qu’un opérateur hermétique ? ",
+                "Donner une définition d’un opérateur auto-adjoint ?"
+            ],
+            "responses": [
+                "16.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": " Propriete_d_un_operateur_adjoint ",
+            "patterns": [
+                "Quelles sont les propriétés vérifiées par l’opérateur adjoint ?"
+            ],
+            "responses": [
+                "17.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Propriete_verifiee_par_l_hermitien",
+            "patterns": [
+                "Quelles sont les propriétés vérifiées par les opérateurs hermitien?"
+            ],
+            "responses": [
+                "18.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Adjoint_d_un_produit_dynamique",
+            "patterns": [
+                "Quelle est l’adjoint d’un produit dynamique ?"
+            ],
+            "responses": [
+                "19.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "fermeture",
+            "patterns": [
+                "Quelle est La relation de fermeture ?",
+                "Quelle est la relation de complétude ?"
+            ],
+            "responses": [
+                "20.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "operateur identite",
+            "patterns": [
+                "Quelle est la résolution de l’identité ?"
+            ],
+            "responses": [
+                "213.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "observable2",
+            "patterns": [
+                "Quelle est la représentation matricielle d’un observable/ un opérateur ?",
+                "Comment peut¬-on  représenter un observable sous forme d’une matrice carrée ?",
+                "Donner la représentation matricielle d’un observable selon mécanique des matrices de Heisenberg ?",
+                "Comment peut¬-on  représenter un observable sous forme d’une matrice carrée ?",
+                "Donner la représentation matricielle d’un observable selon mécanique des matrices de Heisenberg ?"
+            ],
+            "responses": [
+                "21.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "representation matricielle d'un ket",
+            "patterns": [
+                "Quelle est la représentation matricielle d’un Ket ?",
+                "Comment peut¬-on  représenter un ket sous forme d’un vecteur ?",
+                "Donner la représentation matricielle d’un ket selon mécanique des matrices de Heisenberg ?\n      "
+            ],
+            "responses": [
+                "22.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "representation matricielle d'un Bra",
+            "patterns": [
+                "Quelle est la représentation matricielle d’un Bra?",
+                "Comment peut¬-on  représenter un Bra sous forme d’un vecteur ?",
+                "Donner la représentation matricielle d’un bra selon mécanique des matrices de Heisenberg ?\n      "
+            ],
+            "responses": [
+                "23.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "representation matricielle d'un produit dynamique",
+            "patterns": [
+                "Quelle est la représentation matricielle d’un produit dyadique ?",
+                "Quelle est la représentation matricielle d’un produit de ket  * bra ?\n      "
+            ],
+            "responses": [
+                "24.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "mesure de valeur propre",
+            "patterns": [
+                " Quelle est la probabilité de trouver comme résultat de mesure une valeur propre?",
+                "En effectuant une mesure, quelle est sont les résultats possibles ?"
+            ],
+            "responses": [
+                "25.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "état quantique ",
+            "patterns": [
+                "Après la mesure, le système se trouve à quel état quantique?"
+            ],
+            "responses": [
+                "26.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "probabilité de trouver une deuxième valeur",
+            "patterns": [
+                "Quelle est la probabilité de trouver une  deuxième fois une valeur propre ?",
+                "Une fois la mesure donne comme résultat une valeur propre, quelle est la probabilité de la retrouver une autre fois ?"
+            ],
+            "responses": [
+                "27.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "espérance quantique",
+            "patterns": [
+                "Comment calculer l’espérance quantique par rapport à un état ?",
+                "Quelle est valeur moyenne mesurée ?"
+            ],
+            "responses": [
+                "28.png"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "écart",
+            "patterns": [
+                "Quelle est l’écart quadratique moyen ?"
+            ],
+            "responses": [
+                "29.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "commutateur",
+            "patterns": [
+                "C’est quoi un commutateur ?"
+            ],
+            "responses": [
+                "30.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "anti-commutateur",
+            "patterns": [
+                "C’est quoi un anti-commutateur ?"
+            ],
+            "responses": [
+                "31.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "propriétés",
+            "patterns": [
+                "Quelles sont les propriétés vérifié par le commutateur ?"
+            ],
+            "responses": [
+                "32.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "observables compatibles",
+            "patterns": [
+                "Quand est-ce que deux observables est dites compatibles ?"
+            ],
+            "responses": [
+                "33.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "dégénérescence",
+            "patterns": [
+                "Définir la notion de dégénérescence ?",
+                "Quand est-ce que une valeur propre est dite dégénérée ?"
+            ],
+            "responses": [
+                "34.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "deux observables",
+            "patterns": [
+                "Comment les kets propres d’un observable sont liés aux kets propres d’un autre lorsque les deux observables sont compatibles ?"
+            ],
+            "responses": [
+                "35.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "ECOC",
+            "patterns": [
+                "C’est quoi un ECOC "
+            ],
+            "responses": [
+                "36.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "combinaison",
+            "patterns": [
+                "La combinaison linéaire de deux états propres est-elle un état propre ? "
+            ],
+            "responses": [
+                "37.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "incertitude",
+            "patterns": [
+                "Quelle est la relation d’incertitude ?",
+                "Quelle est la relation qui explique les fluctuations quantiques ?"
+            ],
+            "responses": [
+                "38.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "orthogonalité",
+            "patterns": [
+                "La condition d’orthogonalité des kets base de l’espace des états ? "
+            ],
+            "responses": [
+                "39.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "amplitude",
+            "patterns": [
+                "L’amplitude de probabilité ?",
+                " La fonction d’onde ?"
+            ],
+            "responses": [
+                "40.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "canonique RCC",
+            "patterns": [
+                "Quelle sont les relations de commutation canonique RCC ?"
+            ],
+            "responses": [
+                "41.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Théorème spectrale ",
+            "patterns": [
+                "Théorème spectrale dans la mécanique quantique ?"
+            ],
+            "responses": [
+                "42.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "représentation X",
+            "patterns": [
+                "Quelles est la représentation X ?"
+            ],
+            "responses": [
+                "43.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "représentation P",
+            "patterns": [
+                "Quelles est la représentation P ?"
+            ],
+            "responses": [
+                "431.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "énergie0",
+            "patterns": [
+                "Qu’est-ce que c’est que l’énergie du point zéro ?"
+            ],
+            "responses": [
+                "44.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Hamiltonien_oscillateur_harmonique ",
+            "patterns": [
+                "Quelle est le Hamiltonien d’un oscillateur harmonique ?"
+            ],
+            "responses": [
+                "45.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "spectre_en_énergie ",
+            "patterns": [
+                "Le spectre en énergie d’un oscillateur harmonique unidimensionnel ?"
+            ],
+            "responses": [
+                "46.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Hamiltonien",
+            "patterns": [
+                "C’est quoi l’Hamiltonien ?"
+            ],
+            "responses": [
+                "47.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "opérateur_évolution",
+            "patterns": [
+                "Que représente l’opérateur d’évolution ?"
+            ],
+            "responses": [
+                "48.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "propriétés_opérateur_évolution",
+            "patterns": [
+                "Quelles sont les propriétés vérifiés par l’opérateur d’évolution ?"
+            ],
+            "responses": [
+                "49.png"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "expression_opérateur_évolution",
+            "patterns": [
+                "Quelle est l’expression  de l’opérateur d’évolution ?"
+            ],
+            "responses": [
+                "50.png"
+            ],
+            "context_set": ""
+        }
+    ]
+}
