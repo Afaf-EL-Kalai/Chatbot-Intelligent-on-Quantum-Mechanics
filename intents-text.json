@@ -1,0 +1,440 @@
+{"intents": [
+
+        {"tag": "question 1",
+         "patterns": ["Le  projecteur en mécanique quantique ?"],
+         "responses": ["Soit {|u_n>} une base de l’espace des états.
+En notation de Dirac, la forme symbolique  des projecteurs est :
+P_n=〖|u〗_n><u_n |
+La base {|u_n>} peut être également un base de kets propres d’un observable qui représente le système. Si la valeur propre u_n est g_n fois dégénérée alors le projecteur sur le sous espace vectoriel engendré par les kets propres associés  〖〖{|u〗_n^i>} 〗_(i=1,…,g_n )   est :
+P_n=∑_(i=1)^(g_n)▒〖〖|u〗_n^i><u_n^i |〗
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 2",
+         "patterns": ["Le commutateur de l’opérateur position et impulsion ?"],
+         "responses": ["〖[X〗_i,P_j]=iђδ_ij
+[P_i,X_j]=-iђ〖n 〖X_i〗^(n-1) δ〗_ij
+〖[P〗_i,f(X_j)]=-iђ〖(df(X_j))/(dX_j ) δ〗_ij
+〖[X〗_i,g(P_j)]=iђ〖(dg(P_j))/(dP_j ) δ〗_ij
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 3",
+         "patterns": ["La différence entre la Représentation d’Heisenberg et Représentation de Schrödinger ? "],
+         "responses": ["Supposons  que le système évolue dans le temps. Plus précisément, supposons que les〖 ψ(a〗_n)  évoluent dans le temps. L'équation <a_n |ψ>=〖 ψ(a〗_n )   indique qu'il y a deux manières équivalentes de décrire l'évolution temporelle du système quantique. Soit on fait évoluer <a_n |  soit on fait évoluer  |ψ> . C'est-à-dire, soit on fait évoluer l'observable A  (et donc sa base de vecteurs propres) soit on fait évoluer le vecteur d'état  |ψ> . Ces deux manières équivalentes de décrire l'évolution temporelle sont respectivement la représentation de Heisenberg et la représentation de Schrödinger.
+
+Dans la représentation de Heisenberg :
+	L'état |ψ>   est constant dans le temps.
+	L'observable  A=A_S évolue dans le temps selon l'équation de Heisenberg :
+iђ  (dA_H (t))/dt=[A_H (t),H]+〖( (∂A_S)/∂t)〗_H=〖[A(t),H]〗_H+〖( (∂A_S)/∂t)〗_H
+Dans la représentation de Schrödinger :
+	Les opérateurs sont indépendants du temps.
+	L'état |ψ>  évolue  dans le temps selon l'équation de Schrödinger :
+iђ (d|ψ(t)>)/dt= H|ψ(t)>
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 4",
+         "patterns": ["La relation d’incertitude d’Heisenberg ?"],
+         "responses": ["C’est la relation d’incertitude entre l’observateur position X  et impulsion P_x :
+∆x  ∆p_x  ≥ђ/2
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 5",
+         "patterns": ["Donner le théorème d’Ehernfest ?", "L’évolution dans le temps de la valeur moyenne d’un opérateur ?"],
+         "responses": ["Le théorème d'Ehrenfest affirme que la dérivée temporelle de la valeur moyenne d’un opérateur A  (où l'opérateur qui renvoie la dérivée temporelle de l'observable concerné) est donnée par :
+(d<A >(t))/dt=  1/iђ<[A,H]>+<∂A/∂t>
+
+où A  est un opérateur quantique quelconque et <A > sa valeur moyenne.
+Le théorème d’ Ehrenfest s’obtient en fait par passage à la valeur moyenne par rapport à l’état |ψ(t_0 )> dans l’eq de Heisenberg :
+iђ  (dA_H (t))/dt=[A_H (t),H]+( (∂A_S)/∂t)_H
+Implique iђ<ψ(t_0 )| (dA_H (t))/dt  |ψ(t_0 )>=<ψ(t_0 )|[A_H (t),H]|ψ(t_0 )>+<ψ(t_0 )¬|〖( (∂A_S)/∂t)〗_H |ψ(t_0 )>
+Et comme,
+ <A >(t)=<ψ(t)|A|ψ(t)>=<ψ(t_0 )|〖U(t,t_0  )〗^+ A U(t,t_0  )|ψ(t_0 )>=<ψ(t_0 )|A_H |ψ(t_0 )>
+Alors :
+(d<A >(t))/dt=  1/iђ<[A,H]>+<∂A/∂t>
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 6",
+         "patterns": ["Opérateur constante de mouvement ?"],
+         "responses": ["Lorsque la valeur moyenne d’un opérateur A est constante dans le temps et ce pour tout état |ψ>  ie :  (d<A >(t))/dt=0 , l’observable physique représentée par l’opérateur A  est alors appelée une constante du mouvement et on dit qu’elle est conservée."],
+         "context_set": ""
+        },
+
+        {"tag": "question 7",
+         "patterns": ["Quelle est l’équation d’Heisenberg ?"],
+         "responses": ["L'observable  〖A=A〗_S (l’observable en point de vue de Schrödinger ) évolue  dans le temps selon l'équation de Heisenberg :
+Si A_S et H dépendent du temps t ( cas  général ):
+iђ  (dA_H (t))/dt=[A_H (t),H]+〖( (∂A_S)/∂t)〗_H=〖[A(t),H]〗_H+〖( (∂A_S)/∂t)〗_H
+ Si A_S et H ne dépendent du temps t :
+iђ  (dA_H (t))/dt=[A_H (t),H]=〖[A(t),H]〗_H
+Ou  A_H=〖U(t,t_0  )〗^+ A U(t,t_0  ) est l’opérateur A en « point de vue de Heisenberg ».
+        H_S=H l’Hamiltonien du système.
+     〖[A(t),H]〗_H=〖U(t,t_0  )〗^+  [A(t),H]U(t,t_0  ) le commutateur dans le point de vue de Heisenberg.
+Pour plus d’information voir « Représentation de Heisenberg et représentation de Schrödinger »
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 8",
+         "patterns": ["Fonction d’onde stationnaire ?"],
+         "responses": ["Si le système est dans un état stationnaire, cette densité de probabilité ne dépend pas du temps et il est possible d'utiliser la fonction d'onde stationnaire ψ(r)   qui dans ce cas ne diffère de ψ(r,t) que par un facteur de phase purement complexe, sans intérêt physique."],
+         "context_set": ""
+        },
+
+        {"tag": "question 9",
+         "patterns": ["Pulsation de Bohr ?"],
+         "responses": ["Les pulsations de Bohr sont défini par :
+ω_(k,k')=(E_k-E_k')/ђ
+Ou E_k représente une énergie du système (une des valeurs propres de l’opérateur Hamiltonien).
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 10",
+         "patterns": ["Quelle est la moyenne temporelle d’un observable dans la représentation de Schrödinger?"],
+         "responses": ["Le point de vue de Heisenberg consiste à considérer la variation dans le temps des observables plutôt que les états (voir la différence entre la représentation de Schrödinger et la représentation de Heisenberg). Dans ce point de vue la valeur moyenne d’un observable Ω est donné par :
+<Ω>(t)=<ψ(t)|( Ω |ψ(t)>=<ψ(t_0 )| 〖U(t,t_0  )〗^+ Ω  U(t,t_0  ))|ψ(t_0 )>=<ψ(t_0 )|Ω_H (t) |ψ(t_0 )>
+On définit donc l’opérateur Ω  dans le point de vue de Heisenberg :
+Ω_H (t)=〖U(t,t_0  )〗^+ Ω  U(t,t_0  )
+Ce point de vue est très utile en pratique pour évaluer les moyennes temporelles . La démarche est la suivante :
+-écrire l’équation de Heisenberg associé à  Ω_H (t)  (calcul du commutateur [Ω,H])
+- intégrer les équations de Heisenberg. Il faut prendre garde au fait que les équations de Heisenberg sont des identités opératorielles et donc que les constantes d’intégration sont en fait des opérateurs.
+- calculer la valeur moyenne de Ω_H (t)  dans l’état initial.
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 11",
+         "patterns": ["Quelle est la moyenne temporelle d’un observable ne dépendant pas du temps?", "Quelle est la moyenne temporelle d’un observable dans la représentation de Schrondinger?"],
+         "responses": ["Soit |ψ(t)>  le ket d’état à un instant arbitraire. Et {〖|E〗_n>} la base discret des kets propres de H l’Hamiltonien du système.
+Toujours pour une observable Ω qui ne dépend pas explicitement du temps, la moyenne temporelle de Ω est donnée par :
+<Ω>(t)=<ψ(t)| Ω |ψ(t)>=  ∑_k▒∑_k'▒〖c_k (t_0 )〗^*  c_k' (t_0 ) e^(-i/ђ 〖(E〗_k-E_(k^' ))(t-t_0 ) )<E_k¬|Ω| E_k'>
+Deux cas se présentent alors :
+- Ω et H sont des observables compatibles : [Ω,H]=0 Alors, la base des {|E_n> } est aussi une base propre de Ω. L’observable Ω est une constante du mouvement. Ceci vient du fait
+que : <E_k¬|Ω| E_k'>=<E_k¬|Ω| E_k>δ_(k,k')  ce qui implique que, même si |ψ(t)> n’est pas un état stationnaire, la moyenne temporelle ne dépend pas du temps :
+<Ω>(t)=∑_k▒|c_k (t_0 )|^2 <E_k¬|Ω| E_k>=<Ω>(t_0)
+-Ω et H sont des observables incompatibles : [Ω,H]≠0. Dans ce cas, il y a bien des oscillations de la valeur moyenne <Ω>(t) au cours du temps qui font intervenir les pulsations de Bohr du système :
+ω_(k,k')=(E_k-E_k')/ђ
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 12",
+         "patterns": ["C’est quoi un état stationnaire ?", "Quand est-ce qu’un état est dit stationnaire ?"],
+         "responses": ["En physique quantique comme dans le cas classique, un état stationnaire est un état qui n’évolue pas dans le temps. Explicitement, un état est dit stationnaire si sa densité de probabilité |ψ(t)|^2=|<x|ψ>|^2  ne dépend pas du temps. ψ(t) étant la fonction d’onde associée associé à cet état quantique.
+Dans le cas d’un système isolé ou soumis à un champ extérieur ne dépendant pas du temps (opérateur hamiltonien indépendant du temps), les kets propres de l’opérateur hamiltonien sont toujours des états stationnaires.
+53)Quelle est la moyenne temporelle d’un observable ne dépendant pas du temps?
+Quelle est la moyenne temporelle d’un observable dans la représentation de Schrondinger?
+Soit |ψ(t)>  le ket d’état à un instant arbitraire. Et {〖|E〗_n>} la base discret des kets propres de H l’Hamiltonien du système.
+Toujours pour une observable Ω qui ne dépend pas explicitement du temps, la moyenne temporelle de Ω est donnée par :
+<Ω>(t)=<ψ(t)| Ω |ψ(t)>=  ∑_k▒∑_k'▒〖c_k (t_0 )〗^*  c_k' (t_0 ) e^(-i/ђ 〖(E〗_k-E_(k^' ))(t-t_0 ) )<E_k¬|Ω| E_k'>
+Deux cas se présentent alors :
+- Ω et H sont des observables compatibles : [Ω,H]=0 Alors, la base des {|E_n> } est aussi une base propre de Ω. L’observable Ω est une constante du mouvement. Ceci vient du fait
+que : <E_k¬|Ω| E_k'>=<E_k¬|Ω| E_k>δ_(k,k')  ce qui implique que, même si |ψ(t)> n’est pas un état stationnaire, la moyenne temporelle ne dépend pas du temps :
+<Ω>(t)=∑_k▒|c_k (t_0 )|^2 <E_k¬|Ω| E_k>=<Ω>(t_0)
+-Ω et H sont des observables incompatibles : [Ω,H]≠0. Dans ce cas, il y a bien des oscillations de la valeur moyenne <Ω>(t) au cours du temps qui font intervenir les pulsations de Bohr du système :
+ω_(k,k')=(E_k-E_k')/ђ
+"],
+         "context_set": ""
+        },
+
+        {"tag": "question 13",
+         "patterns": ["Quelle est l’expression du ket d’état à l’instant t si on connait son expression à l’état initial ?"],
+         "responses": ["Si on suppose que l’opérateur Hamiltonien H ne dépend pas du temps, l’expression de l’opérateur d’évolution U  dans la base discret des kets propres de H noté {〖|E〗_n>} est :
+U(t,t_0  )=∑_n▒〖e^(-i/ђ E_n (t-t_0 ) ) 〖|E〗_n>〗<E_n¬|
+Ainsi
+|ψ(t_0)>=∑_n▒〖〖c_n (t_0)|E〗_n>〗       |ψ(t)>=∑_n▒〖〖c_n (t_0 ) e^(-i/ђ E_n (t-t_0 ) )  |E〗_n>〗
+"],
+         "context_set": ""
+        },
+      {"tag": "ket",
+     "patterns": ["C’est quoi un ket ?","Comment définir et décrire l’état d’un système ?","Est-ce que le ket suffit pour décrire totalement un système physique à un instant donné t ?"],
+     "responses": ["En mécanique quantique, un état physique est représenté par un vecteur d’état dans un espace vectoriel complexe E . Suivant Dirac, nous appellerons un tel vecteur un ket et le noterons |ψ>. D’après le premier postulat, ce ket contient toute l’information sur l’état physique ; tout ce que nous sommes autorisés à demander à propos de cet état est contenu dans le ket. Premier Postulat (état quantique) : l’état d’un système physique à un instant donné t est défini par la donnée d’un ket |ψ(t)>appartenant à un espace des états E. Les états |ψ> et c|ψ>, où c≠0, représentent le même état physique. En d’autres termes, seule la “direction” dans l’espace vectoriel est significative. Le terme de “rayon” est parfois employé au lieu de “vecteur” "
+     ],
+     "context": ""
+     },
+     {"tag":" postulat1",
+      "patterns":["Quelle est le premier postulat de la mécanique quantique ?","C’est quoi Le postulat 1 de la mécanique quantique ?","Qu’est-ce qu’un état quantique ?"],
+      "responses":["Premier Postulat (état quantique) : l’état d’un système physique à un instant donné t est défini par la donnée d’un ket |ψ(t)i appartenant à un espace des états E."],
+      "context": ""
+     },
+     {"tag":"postulat2",
+      "patterns":[" Quelle est le deuxième postulat de la mécanique quantique ?" ,"C’est quoi Le postulat 2 de la mécanique quantique ?","Quelle est le  principe de la correspondance en mécanique quantique ?"],
+      "responses":["Deuxième Postulat (principe de correspondance) : Toute grandeur physique mesurable est décrite par un opérateur agissant dans l’espace des états. Cet opérateur est une observable."],
+      "context":""
+     },
+     {"tag":"postulat3",
+      "patterns":["Quelle est le troisième postulat de la mécanique quantique ?","C’est quoi Le postulat 3 de la mécanique quantique ?","C’est quoi le postulat de la mesure dans la mécanique quantique ?"],
+      "responses":["Troisième Postulat (postulat de la mesure) : la mesure d’une grandeur physique représentée par une observable A sur un système ne peut fournir que l’une des valeurs propres de l’opérateur A."],
+      "context":""
+      },
+     {"tag":"postulat4",
+      "patterns":["Quelle est le quatrième postulat de la mécanique quantique ?",
+                  "C’est quoi Le postulat 4 de la mécanique quantique ?",
+                  "C'est quoi le postulat de l’interprétation probabiliste dans la mécanique quantique ?",
+                  "Quelle est le postulat de Born ?"],
+      "responses":["Quatrième Postulat (interprétation probabiliste) : la mesure d’une grandeur physique représentée par une observable A, effectuée sur un système décrit par un état normalisé |ψ> donne le résultat an avec la probabilité :
+
+                  Pn = < 𝒂𝒏|ψ > (cas d’un spectre discret et non dégénéré).
+
+                  Pn=∑< 𝒂𝒏|𝛙 >𝒏 (cas d’un spectre discret et dégénéré)"],
+      "context":[""]
+      },
+
+      {"tag":"postulat5",
+      "patterns":["Quelle est le cinquième postulat de la mécanique quantique ?","C’est quoi Le postulat 5 de la mécanique quantique ?","C’est quoi le postulat de réduction du paquet d’ondes  dans la mécanique quantique ?","Quelle est le postulat de réduction du paquet d’ondes ?"],
+      "responses":["Cinquième Postulat (réduction du paquet d’ondes) : si la mesure de l’observable A sur un système dans un état |ψ > donne le résultat 𝒂𝒏 , l’état du système immédiatement après la mesure est la projection normée de |ψ> sur le sous-espace propre associé à 𝒂𝒏 :
+                    𝑷𝒏̃|ψ> /√𝑷(𝒂𝒏)
+
+                    𝑷𝒏̃ : l'opérateur projecteur défini par : 𝑷𝒏̃ = ∑|𝒂𝒏,𝒌 ><𝒂𝒏,𝒌 |𝒈𝒏𝒌=𝟏 , 𝒈𝒏 étant le dégré de dégénérescence de la valeur propre 𝒂𝒏 et |𝒂𝒏,𝒌 > ses vecteurs propres associés.
+
+                    𝑷(𝒂𝒏) : est la probabilité de trouver comme résultat la valeur propre 𝒂𝒏."],
+      "context":""
+      },
+       {"tag":"postulat6",
+      "patterns":["Quelle est le sixième postulat de la mécanique quantique ?",
+                   "C’est quoi Le postulat 6 de la mécanique quantique ?",
+                   "C’est quoi le postulat de l’évolution temporelle de l'état quantique ?",
+                   "Quelle est l’équation de Schrödinger?"],
+      "responses":["Sixième Postulat (évolution temporelle) : L’évolution temporelle du ket d’état |ψ(t)i est gouvernée par l’équation de Schrödinger :
+                    i𝒉̅ 𝒅|𝛙(𝐭)>𝒅𝒕 = H(t)|ψ(t)>
+                    où l’opérateur Hamiltonien, H(t), qui correspond à l’observable associée à l’énergie totale du système, dépend éventuellement du temps.
+                    Cette équation est l'équation dynamique de la mécanique quantique. Elle signifie simplement que c'est l'opérateur « énergie totale » du système ou Hamiltonien, qui est responsable de l'évolution du système dans le temps."],
+      "context":""
+      },
+       {"tag":"observable",
+      "patterns":["definition d'un observable","la difference entre un observable et un opérateur","les proprietées vérifiées par un observateur"],
+      "responses":["Un observable est un opérateur qui vérifie les propriétés suivante :
+
+                   - Il est linéaire.
+
+                   - Les valeurs propres de A, autrement dit les résultats possibles de l'opération de mesure, doivent être des nombres réels. Ceci est assuré si A est un opérateur hermitien.
+
+                   - Les vecteurs propres de A doivent former une base orthonormée de l’espace des états. { <𝒖𝒏𝒊| } forme une base orthonormée si :
+
+                   - <𝒖𝒏𝒊|𝒖𝒏𝒊> = 𝜹𝒊𝒋𝜹𝒏𝒎
+
+                   - La relation de fermeture est vérifiée :∑∑|𝒖𝒏𝒊><𝒖𝒏𝒊|𝒈𝒏𝒊=𝟏𝒏=1"],
+      "context":""
+      },
+       {"tag":"opérateur",
+      "patterns":["qu'est ce qu'un opérateur en mécanique quantique?"],
+      "responses":["C’est un être mathématique qui agit sur une fonction pour donner une autre. Une grandeur physique est représentée par un opérateur ou observable agissant dans l’espace des états. De manière générale, un opérateur A agit sur un ket depuis la gauche, A · (|ψ>) = A|ψ> ce qui donne un autre ket."],
+      "context":""
+      },
+       {"tag":"ket_propre",
+      "patterns":["Qu’est-ce que c’est que les Kets propres ?",
+                   "Comment définir les kets propres d’un opérateur ?",
+                   "Quelles sont les kets propres d’un observable ?",
+                   "Quelles sont les états propres ?",
+                   "Quelles sont les vecteurs propres d’un opérateur ?"],
+      "responses":["les vecteurs propres décrivent l'état quantique du système immédiatement après la mesure et résultant de cette mesure (voir postulat V : réduction du paquet d'onde).Ce sont les kets propres d’un opérateur A. Ils sont notés |𝒂𝟏>, |𝒂𝟐>, |𝒂𝟑>, . . . et ont la propriété que
+
+                                A |𝒂𝒏> = 𝒂𝒏 |𝒂𝒏> (∀n)
+
+                    où les 𝒂𝒏 sont des nombres complexes. Ces nombres sont les valeurs propres de l’opérateur A. L’ensemble de ces nombres, {an}, constitue le spectre de A.
+                    L'état physique associé à un ket propre est appelé un état propre.
+                    Les états propres de tout observable A sont complets et forment une base orthonormée dans l'espace de Hilbert qui est l’espaces des états."],
+      "context":""
+      },
+       {"tag":"spectre_observable",
+      "patterns":[" Que represente le spectre d'un observable?"],
+      "responses":["On appelle spectre de l'observable A, l'ensemble des valeurs propres de A. C'est l'ensemble des valeurs propres associées à la base de E ( espace des kets ), formée de vecteurs propres de l'observable A."
+      ],
+      "context":""
+      },
+       {"tag":"bra",
+      "patterns":["C’est quoi un bra ?",
+                  "Comment déterminer le bra associé à un ket ?",
+                  "Qu’est ce que c’est qu’un espace de bras ?"],
+      "responses":["L’espace des bras, un espace vectoriel “dual” à l’espace des kets. Nous postulons qu’à chaque ket |ψ> correspond un bra conjugué, noté <ψ| qui est dans l’espace des bras. L’espace des bras est engendré par des bras propres {<𝒂𝒏 |} correspondant aux kets propres {|𝒂𝒏 >} d’un certain opérateur A. Il y a une correspondance un à un entre l’espace des kets et celui des bras :
+
+                    |ψ> ← CD → <ψ| ,
+
+                    |𝒂𝟏 >,|𝒂𝟐 >},|𝒂𝟑 >}. . . ← CD → <𝒂𝟏 |,<𝒂𝟐 |,<𝒂𝟑 | . . .
+
+                    |ψ> + |φ> ← CD → <ψ| + <φ| ,
+
+                    𝒄𝟏|ψ1> + 𝒄𝟐|ψ2> ← CD → 𝒄𝟏*<ψ1| +𝒄𝟐* <ψ2|
+
+                    Où CD correspond à correspondance par dualité."],
+      "context":""
+      },
+       {"tag":"produit dyadique",
+      "patterns":["C’est quoi un produit dyadique ?","Le produit d'un ket et bra est ce un scalaire ou opérateur?", "le produit ket fois bra"],
+      "responses":["Le produit dyadique est défini par |ψ><φ|. Ce produit n’a rien à voir avec le produit scalaire. Il correspond à un opérateur agissant dans l’espace des états tandis que le produit scalaire <φ|ψ>est un nombre."],
+      "context":""
+      },
+      {"tag": "hermitien",
+     "patterns": ["Qu’est-ce qu’un opérateur hermétique ? ","Donner une définition d’un opérateur auto-adjoint ?"],
+     "responses": ["Un opérateur A est hermitique si A† = A. C'est à dire si  <φ|A|ψ> = < ψ|A|φ>*
+     Un opérateur hermitique a toutes ses valeurs propres réelles et les vecteurs propres correspondant à des valeurs propres différentes sont orthogonaux. Ce qui peut se résumer par :  A † = A et A|a_n = a_n|a_n>  <a_n|a_m>= 0 (a_n ≠a_m).
+     "],
+       "context": [""]
+     },
+
+
+     {"tag":" Propriete_d_un_operateur_adjoint ",
+      "patterns":["Quelles sont les propriétés vérifiées par l’opérateur adjoint ?"],
+      "responses":["
+      -(A† ) † = A
+      - (AB) † = B†A†
+      - Si A|ψ>=|φ> alors <ψ|A^+=<φ|
+      - Représentation matricielle de l’opérateur adjoint en base orthonormée :
+      A_ij^+=<u_i |A^+ | u_j>=〖<u_j |A| u_i>〗^*=A_ji^*
+      "],
+      "context": [""]
+     },
+
+
+     {"tag":"Propriete_verifiee_par_l_hermitien",
+      "patterns":["Quelles sont les propriétés vérifiées par les opérateurs hermitien?"],
+      "responses":["
+      - les valeurs propres d’un opérateur hermitien A sont réelles.
+      - Les vecteurs propres correspondant à des valeurs propres différentes sont orthogonaux.
+      -Les éléments de matrice d’un opérateur hermitique sont tel que : A_ji^*=A_ij.
+      Donc les éléments de la diagonales sont réels et les élément symétriques par rapport à la diagonale sont conjugué l’un de l’autre.
+      "],
+      "context":[""]
+     },
+
+
+     {"tag":"Adjoint_d_un_produit_dynamique",
+      "patterns":["Quelle est l’adjoint d’un produit dynamique ?"],
+      "responses":["D = |ψ><φ| ⇐⇒ D† = |φ><ψ|"],
+      "context":[""]
+      },
+
+
+     {"tag":"fermeture",
+      "patterns":["Quelle est La relation de fermeture ?",
+                  "Quelle est la relation de complétude ?"
+                  ],
+      "responses":["C’est la relation vérifiée par les kets base de l’espace des états ( ou les états propres) :
+      Cas discret :   ∑_(n=1)^N▒〖〖|u〗_n><u_n |〗= 1  ,  {〖|u〗_i>} base
+      Cas continu :  ∫▒〖dξ |ξ><ξ|=1〗,   les  |ξ> sont les kets bases.
+      "],
+      "context":[""]
+      },
+
+
+      {"tag":"operateur identite",
+      "patterns":["Quelle est la résolution de l’identité ?"],
+      "responses":[" 1  est l’opérateur identité dans l’espace des états."],
+      "context":[""]
+      },
+
+
+       {"tag":"observable2",
+      "patterns":["Quelle est la représentation matricielle d’un observable/ un opérateur ?",
+      "Comment peut¬-on  représenter un observable sous forme d’une matrice carrée ?",
+      "Donner la représentation matricielle d’un observable selon mécanique des matrices de Heisenberg ?",
+      "Comment peut¬-on  représenter un observable sous forme d’une matrice carrée ?",
+      "Donner la représentation matricielle d’un observable selon mécanique des matrices de Heisenberg ?"],
+      "responses":["Cas discret :
+      Selon la mécanique des matrices de Heisenberg, un opérateur, par exemple A, peut être représenté par une matrice carrée. En utilisant deux fois la relation de fermeture, cet opérateur peut s’écrire :
+      A = ∑_(n=1)^N▒∑_(m=1)^N▒〖〖|a〗_n>〖<a〗_n |A|a_m>〖<a〗_m |〗
+      Dans un espace des états à N dimensions il y a N × N nombres de la forme
+       〖<a〗_n |A|a_m>. On peut arranger ces nombres de manière à former une matrice carrée de taille N × N dont les indices de lignes et colonnes apparaissent de la manière A_ij = 〖<a〗_i |A| a_j>   .
+      Dans le cas où les {〖<a〗_i |} sont des kets propres de A, la matrice associée est diagonale. Et 〖<a〗_i |A| a_j>=a_(i ) δ_ij
+      Cas continu : A_ξξ' = <ξ|A|ξ'>
+      Par analogie :
+      Si |ξ> ést le ket propre de l’observable A et |ξ> sa valeur propre associé, alors
+      <ξ|A|ξ'>=ξ δ(ξ-ξ^')
+      "],
+      "context":[""]
+      },
+
+
+       {"tag":"representation matricielle d'un ket",
+      "patterns":["Quelle est la représentation matricielle d’un Ket ?",
+      "Comment peut¬-on  représenter un ket sous forme d’un vecteur ?",
+      "Donner la représentation matricielle d’un ket selon mécanique des matrices de Heisenberg ?
+      "],
+      "responses":["Selon la mécanique des matrices de Heisenberg, les kets sont représentés par des vecteurs colonnes :
+      Cas discret :                        |ψ>= ∑_(n=1)^N▒c_n  〖|a〗_n>=(█(c_1=〖<a〗_1 |ψ>@c_2=〖<a〗_2 |ψ>@c_3=〖<a〗_3 |ψ>@⋮))
+      Cas continu :                      |ψ>=∫▒〖dξ <ξ |ψ>|ξ>〗=∫▒〖dξ  ψ(ξ)  |ξ>〗, ψ(ξ) étant la fonction d’onde associé à l’état |ψ>.
+      "],
+      "context":[""]
+      },
+
+
+       {"tag":"representation matricielle d'un Bra",
+      "patterns":["Quelle est la représentation matricielle d’un Bra?",
+      "Comment peut¬-on  représenter un Bra sous forme d’un vecteur ?",
+      "Donner la représentation matricielle d’un bra selon mécanique des matrices de Heisenberg ?
+      "],
+      "responses":["Selon la mécanique des matrices de Heisenberg, les bras sont représentés par des vecteurs lignes :
+      Cas discret :       < φ|= (〖<ϕ|)〗^+=∑_(n=1)^N▒〖〖d_n〗^* 〖<a〗_n |〗=(■(〖d_1〗^*&〖d_2〗^*&〖d_3〗^* )…)
+      Cas continu :       <ψ|=∫▒〖dξ <ψ |ξ><ξ|〗=∫▒〖dξ  ψ^* (ξ)<ξ|〗, ψ(ξ) étant la fonction d’onde associé à l’état |ψ>.
+      "],
+      "context":[""]
+      },
+
+
+       {"tag":"representation matricielle d'un produit dynamique",
+      "patterns":["Quelle est la représentation matricielle d’un produit dyadique ?",
+      "Quelle est la représentation matricielle d’un produit de ket  * bra ?
+      "],
+      "responses":["Un produit dyadique est un opérateur qui peut être représenté par une matrice carré :
+      Cas discret :   |ψ> < φ|= (█(c_1@c_2@c_3@⋮))(■(〖d_1〗^*&〖d_2〗^*&〖d_3〗^* )…)=(■(c_1 〖d_1〗^*&c_1 〖d_2〗^*&…@c_2 〖d_1〗^*&c_2 〖d_2〗^*&…@⋮&⋮&⋱))
+      Cas continu : |ψ> < φ|=…………………….
+      "],
+      "context":[""]
+      },
+
+
+       {"tag":"mesure de valeur propre",
+      "patterns":[" Quelle est la probabilité de trouver comme résultat de mesure une valeur propre?",
+     "En effectuant une mesure, quelle est sont les résultats possibles ?"],
+      "responses":["Lorsque le système se trouve dans un état |ψ> normé , une mesure  d’une grandeur physique du système représenté par  l’observable A ne peut donner comme résultat que l’une des valeurs propres de l’observable mesurée. La probabilité de trouver comme résultat la valeur propre a_n est :
+      P_n= |<a_n |ψ>|^2   (4ieme postulat) "],
+      "context":[""]
+      },
+
+
+       {"tag":"état quantique ",
+      "patterns":["Après la mesure, le système se trouve à quel état quantique?"],
+      "responses":["Une mesure de A projette le système dans l’un des états propres de A. Elle change donc l’état du système (voir le 5ieme postulat ).
+      Etant donnée un système physique dans un état |ψ> avant la mesure, nous ne savons pas à l’avance dans lequel des différents états propres |a_n> le système va être projeté à la suite de la mesure. Nous postulons toutefois que la probabilité de se trouver projeté dans un |a_n>   particulier est donnée par :
+      Probabilité de mesurer a_n=|<a_n |ψ>|^2
+      Toute mesure ultérieure donne la même valeur propre avec une probabilité 1. En effet : 〖P(a〗_n)=|<a_n |a_n>|^2=1
+      "],
+      "context":[""]
+      },
+
+
+       {"tag":"probabilité de trouver une deuxième valeur",
+      "patterns":["Quelle est la probabilité de trouver une  deuxième fois une valeur propre ?",
+      "Une fois la mesure donne comme résultat une valeur propre, quelle est la probabilité de la retrouver une autre fois ?"
+      ],
+      "responses":["Une fois la mesure d’une grandeur physique donne comme résultat la valeur propre a_n, toute mesure ultérieure donne la même valeur propre avec une probabilité 1. En effet, immédiatement  après la mesure le système est projeté sur l’état propre associé |a_n> . Ainsi     〖P(a〗_n)=|<a_n |a_n>|^2=1"],
+      "context":[""]
+      },
+
+      {"tag":"espérance quantique",
+            "patterns":["Comment calculer l’espérance quantique par rapport à un état ?", "Quelle est valeur moyenne mesurée ?"
+            ],
+            "responses":["On définit l’espérance quantique de A par rapport à l’état |ψ> par : pour un ket normalisé sinon faut soustraire psi^2
+            <A >=  <ψ|A|ψ>
+            Il s’écrit aussi :
+            Cas discret :  <A >= ∑_(n=1)^N▒〖a_n |<a_n |ψ>|^2 〗= La somme des valeurs propres mesurés  multiplié par la probabilité de les obtenir.
+            Cas continu :
+            En théorie quantique, on utilise aussi des opérateurs dont le spectre n'est pas discret, comme l'opérateur de position  X  en mécanique quantique. Cet opérateur ne possède pas de valeurs propres, mais a un spectre complètement continu. Dans ce cas, le vecteur |ψ> peut être écrit (c’est mieux de dire ‘’représenter’’ car c’est une représentation dans l’espace des positions ) comme une fonction à valeurs complexes ψ(x)  sur le spectre de X . La valeur moyenne de l'opérateur de position s'écrit alors
+             <X >=∫▒〖dx  〖ψ(x)〗^*  x 〗 ψ(x)=∫▒〖dx |ψ(x)|^2  x  〗
+            En général : <A >=∫▒〖dr ⃗^3   〖ψ(r ⃗,t)〗^*  x?? [〗 A ψ(r ⃗,t)]
+            "
+            ],
+            "context":[""]
+            }
+
+]
+}
