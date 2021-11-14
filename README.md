@@ -8,14 +8,14 @@ This is a project about an intelligent chatbot using NLP and machine Learning.
 ## Dataset
 I have created a dataset of 64 most important questions/answers about quantum Mechanics and then stored it in JSON file.
 
-- The pdf version is named : 
+- The pdf version is named : Question&réponse_Mécanique quantique.pdf
 
 - The JSON file version is named :
 
 We have encountered a problem to read maths equations so we decided to convert every text-based answer into a screenshot and store the name of this image file in the JSON file.
 
-- The JSON file version with images is named :
-- The file containing images is named :
+- The JSON file version with images is named : intents-2.json
+- The file containing images is named : images.json
 
 
 
